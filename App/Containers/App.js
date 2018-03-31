@@ -17,7 +17,7 @@ const store = createStore()
  *
  * We separate like this to play nice with React Native's hot reloading.
  */
-class App extends Component {
+class DailyAfformationsApp extends Component {
   render () {
     return (
       <Provider store={store}>
@@ -29,5 +29,5 @@ class App extends Component {
 
 // allow reactotron overlay for fast design in dev mode
 export default DebugConfig.useReactotron
-  ? console.tron.overlay(App)
+  ? console.tron.overlay(DailyAfformationsApp)
   : App
